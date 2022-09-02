@@ -1,7 +1,6 @@
 # RACK42 - A Spreadsheet Application for the DM42
 ## The unique (RPN) Spreadsheet for/in your Pocket!
----
-## COMING SOON!
+
 ---
 
 ![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
