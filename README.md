@@ -7,12 +7,6 @@
 ![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
 
 ```
-This software is protected by the BSD 3-Clause License and
-copyright (c) 2015-2021, SwissMicros. All rights reserved.
-
-Changes and additions are protected by the BSD 3-Clause License
-and made by deetee, (c) 2022. All rights reserved.
-
 
 ____________________
 
