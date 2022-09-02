@@ -5,8 +5,9 @@
 
 See a short video of RACK42 at: https://youtu.be/_lt0Zoqh0og
 
-![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
+---
 
+![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
 
 ```
 
