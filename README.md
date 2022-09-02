@@ -13,7 +13,6 @@ copyright (c) 2015-2021, SwissMicros. All rights reserved.
 Changes and additions are protected by the BSD 3-Clause License
 and made by deetee, (c) 2022. All rights reserved.
 
----
 
 ____________________
 
