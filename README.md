@@ -8,6 +8,9 @@ See a short video of RACK42 at: https://youtu.be/_lt0Zoqh0og
 ---
 
 ![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
+![complex](https://user-images.githubusercontent.com/16148023/188614503-6745a1b5-de10-44c6-91d7-7ebb76eaf232.png)
+![big](https://user-images.githubusercontent.com/16148023/188614505-d0060f58-5642-4775-a4b2-4ce21a3746e1.png)
+![chart](https://user-images.githubusercontent.com/16148023/188614508-ad86e4dc-b8e5-4b8f-ae8e-ee494489cbd6.png)
 
 ```
 
