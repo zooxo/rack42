@@ -1,0 +1,15 @@
+Title of this Document
+
+# Header1 - Intro
+This Text uses the markup language to prepare the text for reading with a html browser.
+The first line provides the document title.
+The first characters in a line decide if the line is interpreted as header or bullet point.
+
+## Header2 - 3 Headers
+* # ... Starts header1
+* ## .. Starts header2
+* ### . Starts header3
+
+### Header3 - Lists
+- Bullet points can be "*"
+- Bullet points can be "-"
