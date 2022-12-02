@@ -6,6 +6,25 @@
 See a short video of RACK42 at: https://youtu.be/_lt0Zoqh0og
 
 ---
+![ss0](https://user-images.githubusercontent.com/16148023/205289206-24746b7f-fe7a-42c6-8655-905f69a798ec.png)
+![ss1](https://user-images.githubusercontent.com/16148023/205289208-8f8e965a-9877-480c-b9cd-e64c71259ea9.png)
+![ss2](https://user-images.githubusercontent.com/16148023/205289211-d1adec6b-a240-4fdd-851a-af32182c37d2.png)
+![ss3](https://user-images.githubusercontent.com/16148023/205289213-161b4a33-5394-463b-a10a-46e9b27f7ab2.png)
+![ss4](https://user-images.githubusercontent.com/16148023/205289214-d6a82795-dc8f-4c48-a298-fe17334a02ff.png)
+![sshex](https://user-images.githubusercontent.com/16148023/205289218-783b67e6-2fb9-47b9-8d03-3a6bffa65cfa.png)
+![bar](https://user-images.githubusercontent.com/16148023/205289195-2096b464-ec0e-45da-ab49-7563f32cb34f.png)
+![fnplot](https://user-images.githubusercontent.com/16148023/205289198-8ad1610a-3f67-4cea-b390-9fd1bfc74606.png)
+![ted](https://user-images.githubusercontent.com/16148023/205289220-097c3e33-d7bf-41d2-af7c-099853a2e3b5.png)
+![draw](https://user-images.githubusercontent.com/16148023/205289197-7fec0331-7a62-4a8f-9efa-f3d2615b84ac.png)
+![hp1](https://user-images.githubusercontent.com/16148023/205289203-2935f120-bf67-4619-b24d-d038d829b11b.png)
+![hp2](https://user-images.githubusercontent.com/16148023/205289204-6450635e-6875-4579-b646-afb419dafe18.png)
+![game1](https://user-images.githubusercontent.com/16148023/205289199-7326f89f-af08-4b47-a844-4e4abe78ea63.png)
+![game2](https://user-images.githubusercontent.com/16148023/205289201-43c426c7-11de-4aa3-a310-96cf0ef4bbfc.png)
+
+
+
+
+
 
 ![screen](https://user-images.githubusercontent.com/16148023/188121175-acece8d7-ab9a-436c-8fea-0f8d40e9e3e3.png)
 ![complex](https://user-images.githubusercontent.com/16148023/188614503-6745a1b5-de10-44c6-91d7-7ebb76eaf232.png)
