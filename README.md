@@ -1,9 +1,6 @@
 # RACK42 - A Spreadsheet Application for the DM42
-## "The unique (RPN) Spreadsheet for/in your Pocket!"
+## "The unique (RPN) Spreadsheet (and more) for/in your Pocket!"
 
----
-# Version 2 is coming soon!
-Math Pack, Calculator, Text Editor, Drawing Application, HP-35 Emulation and 2048-Game
 ---
 
 See a short video of RACK42 at: https://youtu.be/_lt0Zoqh0og
