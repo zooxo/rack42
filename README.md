@@ -3,7 +3,9 @@
 
 ---
 
-See a short video of RACK42 at: https://youtu.be/_lt0Zoqh0og
+See a short video of RACK42 at: https://youtu.be/
+
+See a short video of version 1 of RACK42 at: https://youtu.be/_lt0Zoqh0og
 
 ---
 ![ss0](https://user-images.githubusercontent.com/16148023/205289206-24746b7f-fe7a-42c6-8655-905f69a798ec.png)
