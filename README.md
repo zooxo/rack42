@@ -3,7 +3,7 @@
 
 ---
 
-See a short video of RACK42 at: https://youtu.be/
+See a short video of RACK42 at: https://youtu.be/5BZ6oYsfi6w
 
 See a short video of version 1 of RACK42 at: https://youtu.be/_lt0Zoqh0og
 
