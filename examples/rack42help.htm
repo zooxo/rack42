@@ -1,0 +1,456 @@
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>IV42 - DOCUMENTATION</title>
+<style>.button{background:#444444; color:#FFFFFF;}.lcd{background:#CCCCCC;}</style>
+</head>
+
+<body>
+
+
+<h2 id="Top">Navigation</h2><br>
+
+<table><tbody>
+<tr><td><span class="button">F1</span> Exit &nbsp; &nbsp; </td><td><span class="button">F2</span> <a href="#Home">&rarr;Home</a></td></tr>
+<tr><td><span class="button">ENTER</span> Link </td><td><span class="button">÷</span> Page Up</td></tr>
+<tr><td><span class="button">▲</span> Previous </td><td><span class="button">×</span> Page Down</td></tr>
+<tr><td><span class="button">▼</span> Next &nbsp; &nbsp; &nbsp; </td><td><span class="button">-</span> Line Up</td></tr>
+<tr><td><span class="button">EXIT</span> Exit &nbsp;</td><td><span class="button">+</span> Line Down</td></tr>
+</tbody></table><br>
+
+
+<br><h2 id="Home">Contents</h2>
+
+<ul>
+<li><a href="#Modes">MODES</a></li>
+<li><a href="#Screen">SCREEN</a></li>
+<li><a href="#Prior">PRIOR KEYS</a></li>
+<li><a href="#Navigation">NAVIGATION MODE</a></li>
+<li><a href="#Edit">EDIT MODE</a></li>
+<li><a href="#Extended">EXTENDED MATH MENU</a></li>
+<li><a href="#Text">TEXT EDIT MODE</a></li>
+<li><a href="#Calculus">CALCULUS</a></li>
+<li><a href="#Matrix">MATRIX</a></li>
+<li><a href="#Bar">BAR GRAPHIC</a></li>
+<li><a href="#Specifications">SPECIFICATIONS</a></li>
+</ul>
+
+
+
+<br><h2 id="Modes">MODES</h2>
+<ul>
+<li><span class="button">F1 SHEET</span> Standard spreadsheet calculation</li>
+<li><span class="button">F2 CAL</span>   Calculator mode (fades out the spreadsheet)</li>
+<li><span class="button">F3 TED</span>   Text file editor</li>
+<li><span class="button">F4 DRAW</span>  Simple ASCII drawing</li>
+<li><span class="button">F5 HP35</span>  Emulates the legendary HP35 calculator</li>
+<li><span class="button">F6 GAME</span>  2048-like game</li>
+</ul>
+
+<br><h3>CALCULATOR</h3>
+With MODES and CAL you can enter (or leave) a simple calculator mode
+(indicated with a 'CAL' in the status line) that 'fades out' the presentation
+of the spreadsheet.<br>
+When pressing STO the current value on the stack will be stored an can be
+recalled anytime with RCL.<br>
+Please note that some functions or features (ie those regarding references)
+are disabled.<br>
+
+<br><h3>TED</h3>
+With TED you can create or edit text files. The top 4 rows of the keys are used
+to simulate a standard keyboard. The keyboard layout can be assigned by the user
+by editing the file "/RACK42/kbd.txt".<br>
+<br>
+TED keys:
+<ul>
+<li><span class="button">SHIFT F1</span>  QUIT TED without saving</li>
+<li><span class="button">SHIFT F2</span>  NEW file</li>
+<li><span class="button">SHIFT F5</span>  HTML view of (markdown) text</li>
+<li><span class="button">SHIFT F6</span>  KBD^ save current keyboard to file /RACK/kbd.txt</li>
+<li><span class="button">/ * - +</span>   Text buffer (mark1, mark2, delete, paste)</li>
+<li><span class="button">UP</span>        Save text to "/RACK42/tmp.txt"</li>
+<li><span class="button">DOWN</span>      Load text file from USB disk</li>
+</ul><br>
+
+Please note that TED uses the same procedure as the spreadsheet application to
+save a textfile with a specific file name - "SAVE AS" (enter the file name in
+a selected cell of the spreadsheet application and press UP after returning to
+TED). Files opened (loaded) with a specific file name are still saved under
+this name (when pressing UP or automatically when leaving TED).<br>
+<br>
+
+HTML view:<br>
+With SHIFT F5 TED offers a html view of the edited file using the internal
+web browser of the DM42 (help file viewer). TED uses some markdown signs to
+produce a html file and saves it to RACK42/ted.htm.<br>
+Please note that so far TED supports 3 headers (lines starting with #, ##
+and ###) and simple not nested unordered lists (lines starting with * or -).
+<br>
+
+<br><h3>DRAW</h3>
+With DRAW you can draw simple ASCII objects (line, rectangle, horizontal and
+vertical text as well as a function plot from the spreadsheet application)
+on a sheet with 7x28 characters. The objects can be treated with
+cut/copy/paste later on. The final picture can be saved (PRINT) to a simple
+text file (print.txt) for later use (ie with a text editor like TED).<br>
+<br>
+
+Possible keys are:
+<ul>
+<li><span class="button">1~9</span>  Cursorpad (see below, 5 centers cursor)</li>
+<li><span class="button">F1</span>   Draw line object</li>
+<li><span class="button">F2</span>   Draw rectangle object</li>
+<li><span class="button">F3</span>   Draw horizontal text object</li>
+<li><span class="button">F4</span>   Draw vertical text object</li>
+<li><span class="button">F5</span>   Draw last function plot from spreadsheet</li>
+<li><span class="button">F6</span>   Save picture to a file (print.txt)</li>
+<li><span class="button">UP</span>   Save DRAW file (new.d) to USB disk (see SAVE AS option below)</li>
+<li><span class="button">DOWN</span> Load DRAW file (*.d) from USB disk</li>
+<li><span class="button">BSP</span>  Delete (at "hot spot") marked object</li>
+<li><span class="button">/ *</span>  Copy draw object to clipboard (grab "hot spot" of object)</li>
+<li><span class="button">-</span>    Delete clipboard</li>
+<li><span class="button">+</span>    Paste clipboard to current cursor position</li>
+</ul>
+
+<br><h3>HP-35</h3>
+In the HP35 mode you can use an emulation of the legendary HP35 calculator.
+Please note that HP35 doesn't use shifted keys. To EXIT HP35 (and return to
+the standard spreadsheet calculation) simply press F1 (QUIT).<br>
+
+<br><h3>GAME</h3>
+In this 2048-like game you have to shift and merge equal numbers in a 4x4 grid.<br>
+<br>
+
+Possible keys are:
+<ul>
+<li><span class="button">F1</span>      Quit</li>
+<li><span class="button">F2</span>      New game</li>
+<li><span class="button">F3 4 1</span>  Collapse left</li>
+<li><span class="button">F4 2</span>    Collapse down</li>
+<li><span class="button">F5 8 5</span>  Collapse up</li>
+<li><span class="button">F6 6 3</span>  Collapse right</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Screen">SCREEN</h2>
+The top line of the screen (status line) shows the selected cell address, the
+value of this cell (if demanded with SHOW) or the date, some indicators (ie
+shift) and the battery status (0...9).<br>
+The second line (edit line) shows the content (formula or text) of the selected
+cell.<br>
+The third part of the screen swows the spreadsheet (with a cell width of 9), or
+two top registers of the stack or (when editing a text) all available ascii
+characters.<br>
+At the bottom of the screen the function keys are shown.
+Please note that in case of printing a chart (see chapter Graphics) the whole
+screen is used by the chart.<br>
+<br>
+
+Indicators:<br>
+<ul>
+<li><span class="button">9</span>                 Battery status (0~9)</li>
+<li><span class="button">^ (arrow up)</span>      Shift</li>
+<li><span class="button">-> (cursor right)</span> CursorPad is active</li>
+<li><span class="button">1</span>                 (Formula) Edit mode - NumPad is active</li>
+<li><span class="button">SQRT</span>              (Formula) Edit mode - Extra math menu is active</li>
+<li><span class="button">@</span>                 (Formula) Edit mode - Reference selection</li>
+<li><span class="button">"</span>                 (Text) Edit mode</li>
+<li><span class="button">x</span>                 HEXmode1 (status line shows cell value in hex format)</li>
+<li><span class="button">X</span>                 HEXmode2 (only status line shows cell value decimal)</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Prior">PRIOR KEYS</h2>
+<ul>
+<li><span class="button">SETUP</span>  Quit RACK42 to operating system (DMCP)</li>
+<li><span class="button">EXIT</span>   On/Off (Suspend)</li>
+<li><span class="button">SHIFT</span>  Toggle shift key</li>
+<li><span class="button">MODES</span>  Modes menu (Spreadsheet, Calculator, Ted, Draw, HP-35)</li>
+<li><span class="button">ASSIGN</span> Screenshot</li>
+<li><span class="button">SHOW</span>   Shows date/time or specific information in the status line</li>
+<li><span class="button">DISP</span>   Toggle grid display</li>
+<li><span class="button">BASE</span>   HEX mode (no HEXmode, HEXmode1 or HEXmode2)</li>
+<li><span class="button">BST</span>    View help image (/RACK42/RACK42help.bmp)</li>
+<li><span class="button">SST</span>    View html help file (/RACK42/RACK42help.htm)</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Navigation">NAVIGATION MODE</h2>
+When starting RACK42 you are in the navigation mode. The number keys work as
+cursor pad (see below). You can select and edit a specific cell, recalculate the
+entire spreadsheet, save or load specific files or copy and paste a cell.<br>
+The navigation mode is also active when you refer in a formula to a specific
+cell (see edit mode).<br>
+
+<br>Navigation Numpad/Cursorpad:<br>
+  <span class="button">7</span> Home  <span class="button">8</span> Up     <span class="button">9</span> PgUp<br>
+  <span class="button">4</span> Left  <span class="button">5</span> Enter  <span class="button">6</span> Right<br>
+  <span class="button">1</span> End   <span class="button">2</span> Down   <span class="button">3</span> PgDn<br>
+<br>
+
+Keys in navigation mode:<br>
+<ul>
+<li><span class="button">1~9</span>              Navigation - cursor pad</li>
+<li><span class="button">ALPHA STO</span>        Define and edit a new text cell</li>
+<li><span class="button">EDIT/F1 ENTER 5</span>  Edit selected cell</li>
+<li><span class="button">CALC/F2 XEQ</span>      (Re-)Calculate spreadsheet</li>
+<li><span class="button">SAVE/F3 ^</span>        Save recent spreadsheet to file new.s (dir RACK42 exists)</li>
+<li><span class="button">LOAD/F4 v</span>        Load spreadsheet from USB disk (dir RACK42 exists)</li>
+<li><span class="button">COPY/F5</span>          Copy selected cell to clipboard</li>
+<li><span class="button">PASTE/F6</span>         Paste cell from clipboard</li>
+<li><span class="button">BACKSPACE</span>        Delete cell content</li>
+<li><span class="button">CLEAR</span>            Clears complete sheet</li>
+<li><span class="button">DISP</span>             Show grid</li>
+<li><span class="button">XEQ</span>              Enter mode menu</li>
+<li><span class="button">PRINT</span>            Print graphic (see chapter GRAPHICS)</li>
+<li><span class="button">PGM.FCN</span>          Function plot (see chapter CALCULUS)</li>
+<li><span class="button">ASSIGN</span>           Make a screenshot</li>
+</ul><br>
+
+Please note that if the selected cell is a text cell, RACK42 saves the file
+under the filemname of this cell's text ("SAVE AS").<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Edit">EDIT MODE</h2>
+When in (formula) edition mode you can type a formula in RPN mode. The formula
+will be evaluated instantly and the value is shown in the cell (or with big
+letters as stack if with CUSTOM demanded) or (if with DISP demanded) in the
+status line with better precision ("Calculator Mode").
+<br>
+<br>Edit keys:<br>
+<ul>
+<li><span class="button">ENTER/F1 5</span>   Enter formula and exit edit mode (to navigation mode)</li>
+<li><span class="button">Sep/F2 R/S</span>   Separate numbers</li>
+<li><span class="button">REF/F3 RCL</span>   Insert reference cell (select: ENTER/F1, escape: ESC/F3)</li>
+<li><span class="button">CLR/F4</span>       Clear complete formula</li>
+<li><span class="button">&lt;-/F5</span>     Edit cursor left</li>
+<li><span class="button">->/F6</span>        Edit cursor right</li>
+<li><span class="button">1...9.</span>       Insert number</li>
+<li><span class="button">Shift+F1~F6</span>  Insert hex digit A~F</li>
+<li><span class="button">+ - * /</span>      Basic operation</li>
+<li><span class="button">BACKSPACE</span>    Delete command</li>
+<li><span class="button">X&lt;&gt;>Y</span>  Swap stack register</li>
+<li><span class="button">LASTx</span>        Duplicate TOS (DUP)</li>
+<li><span class="button">CLEAR</span>        Delete TOS (DROP)</li>
+<li><span class="button">+/-</span>          Negate TOS (NEG)</li>
+<li><span class="button">E</span>            Push 10^TOS to the stack</li>
+<li><span class="button">Rv</span>           Rotate (3 top stack register)</li>
+<li><span class="button">MATH</span>         1/X SQRT LOG LN POW SQR 10^X e^X</li>
+<li><span class="button">TRIG</span>         SIN COS TAN ASIN ACOS ATAN</li>
+<li><span class="button">SUM+</span>         Sum of range</li>
+<li><span class="button">SUM-</span>         Count of range</li>
+<li><span class="button">SLOPE</span>        SLOPE (fncell, xcell, xvalue)</li>
+<li><span class="button">SOLVER</span>       SOLVE (fncell, xcell, xstartvalue)</li>
+<li><span class="button">INTEGRAL</span>     INTEGRAL(fncell, xcell, fromvalue, tovalue)</li>
+<li><span class="button">DEQ</span>          DIFFERENTIAL EQUATION (fncell, xcell, ycell, tovalue)</li>
+<li><span class="button">MATRIX</span>       Matrix function menu</li>
+<li><span class="button">FLAGS</span>        Physical constants</li>
+<li><span class="button">CUSTOM</span>       Show cell value in grid or as stack (big numbers)</li>
+<li><span class="button">CATALOG XEQ</span>  Extended math menu (see below)</li>
+<li><span class="button">PROB</span>         Probability math menu</li>
+<li><span class="button">COND</span>         Conditions menu (no nesting)</li>
+<li><span class="button">STAT STAT</span>    Statistics menu</li>
+<li><span class="button">CONV CONVERT</span> Conversions menu</li>
+<li><span class="button">MISC</span>         Miscellaneous menu</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Extended">EXTENDED MATH MENU</h2>
+When in edit mode XEQ or CATALOG (Shift +) offers an expanded math menu to
+insert ie hyperbolic functions.<br>
+Please note that some functions deliver more than one result. Try to extract
+the appropriate result with SWAP, CLEAR/DROP. For instance "41 C|F" yields
+5 (C, Y) and 105.8 (F,  X). If you wanted to convert 41F to 5C add CLEAR/DROP
+(Shift+BACKSPACE) or if you wanted to convert 41C to 105.8F add SWAP and
+CLEAR/DROP to calculate on.<br>
+<br>
+<ul>
+<li><span class="lcd">HYP</span>  Hyperbolic functions (SINH, COSH, TANH, ASINH, ACOSH, ATANH)</li>
+<li><span class="lcd">PROB</span> Probability functions (nP|Cr, LN!, P|CDF, NAND, INT)</li>
+<li><span class="lcd">COND</span> Conditions (<, =, >, IF, ELSE, THEN))</li>
+<li><span class="lcd">STAT</span> Statistics (COUNT, SUM, AVG|STDDEV, MIN|MAX, LRa|b)</li>
+<li><span class="lcd">CONV</span> Conversions (P|R, HMS|H, kg|lb, °C|°F, cm|in, l|gal))</li>
+<li><span class="lcd">MISC</span> Miscellaneous (MAT, VAL, DEQ, SLOPE, SOLVE, INTEGRAL)</li>
+</ul><br>
+
+Please note that VAL copies the recent value of the cell as plain value to
+this cell. The recent formula of this cell will be deleted.<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Text">TEXT EDIT MODE</h2>
+When defining (ALPHA or STO) or editing (EDIT, ENTER/F1) a text cell all
+possible characters will be shown an can be selected using the navigtion pad.
+Please note that the number of characters per cell is limited to 9.<br>
+<br>
+
+<ul>
+<li><span class="button">ENTER/F1 STO</span> Enter text and exit text mode (to navigation mode)</li>
+<li><span class="button">INS/F2 5</span>     Insert selected character to text</li>
+<li><span class="button">CLR/F4</span>       Clear complete text</li>
+<li><span class="button">&lt;-/F5</span>     Edit cursor left</li>
+<li><span class="button">-&gt;/F6</span>     Edit cursor right</li>
+<li><span class="button">BSPC</span>         Delete character</li>
+<li><span class="button">NAVIGATE</span>     Use navigation pad to select character</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Calculus">CALCULUS</h2>
+The PLOT, SLOPE, SOLVER and INTEGRAL functions evaluate a cell containing a
+function (fncell) which depends itself of a referenced cell (xcell).
+Additionally PLOT and INTEGRAL demand two range x-values (values only no
+references).<br>
+To see the function plot navigate to the cell containing the PLOT command
+(don't edit) and press PGM.FCN.<br>
+SOLVER tries to find the root of the fncell variating the xcell using Newton's
+secant method. As start value SOLVER uses the value of xcell.<br>
+INTEGRAL uses the Simpson's formula and divides the range into 10 stripes.
+<br>
+Please note that DEQ solves a differential equation y'=f(x,y) with given
+start value y(x0) due to Runge-Kutta with 4th order (RK4). As arguments DEQ
+needs fncell, xcell, ycell and a x-value for the calculated y-value of the
+function that solves the differential equation.
+<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Matrix">MATRIX</h2>
+In edit mode you can enter matrix functions using MATRIX or the math menu (XEQ).
+A reference to a matrix references to the first matrix cell (1|1).<br>
+Please note that RACK42 deals with 3x3 matrices only - smaller matrices can be a
+subset.<br>
+Matrix functions that create a new matrix write 3x3 (hard coded) values to the
+spreadsheet at the target cell (to) if there is sufficient room on the
+spreadsheet. Please be careful using these commands without a target cell to not
+overwrite existing contents of the spreadsheet.<br>
+<br>
+
+<ul>
+<li><span class="lcd">DET</span>   Determinant (from)</li>
+<li><span class="lcd">TRANS</span> Transpose (from, to)</li>
+<li><span class="lcd">INV</span>   Inverse (from, to)</li>
+<li><span class="lcd">MULT</span>  Multiply (from1, from2, to)</li>
+<li><span class="lcd">SUB</span>   Substract (from1, from2, to)</li>
+<li><span class="lcd">ADD</span>   Add (from1, from2, to)</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Bar">BAR GRAPHIC</h2>
+RACK42 can display a simple bar graphic. Enter the desired text (optional) and
+the  related data in two colums. Define in another cell the range of the data
+column (references to first and last data cell). Navigate to this "reference
+cell" and press PRINT to view a simple bar chart. As the bars are scaled the
+maximum value will be printed in the first line. Please note that bars with
+negative values are not printed.<br>
+Please note that RACK42 supports function plots (see chapter CALCULUS).
+<br>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Specifications">SPECIFICATIONS</h2>
+Spreadsheet, Calculator:<br>
+<ul>
+<li>  6 15   Number of columns and rows</li>
+<li>  3 5    Number of columns and rows to be displayed</li>
+<li>  8      Size of calculation stack</li>
+<li>  5      Size of stack for reference addresses</li>
+<li>  40     Number of commands per cell</li>
+<li>  9      Cell width; max. number of letters of text cell</li>
+<li>  30 50  Pixel size of function plot</li>
+<li>  100    Maximal number of iterations (solver)</li>
+<li>  1E-8   Differential step (slope, solver)</li>
+<li>  100    Number of stripes (integration, differential equation)</li>
+</ul>
+<br>
+
+TED:<br>
+<ul>
+<li>  8192   Maximal size of text files</li>
+<li>  7      Number of displayed text lines</li>
+</ul>
+<br>
+
+DRAW:<br>
+<ul>
+<li>  7 28   Size of character drawing board</li>
+<li>  30     Maximal number of drawing objects</li>
+<li>  25     Maximal length of text objects</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+
+
+<br><h2 id="Phys">PHYSICAL CONSTANTS</h2>
+To enter a physical constant (2018 CODATA) press FLAGS in edit mode and the
+the appropriate F-key.<br>
+<br>
+<ul>
+<li>c    299792458         Speed of light</li>
+<li>g    9.80665           Acceleration of gravity</li>
+<li>G    6.67430e-11       Newton constant of gravity</li>
+<li>Vm   0.02271095464     Molar volume of ideal gas</li>
+<li>NA   6.02214076e23     Avogadro constant</li>
+<li>Rinf 10973731.568160   Rydberg constant</li>
+<li>h    6.62607015e-34    Planck constant</li>
+<li>Phi0 2.067833848e-15   Magnetic flux quantum</li>
+<li>a0   5.29177210903e-11 Bohr radius</li>
+<li>k    1.380649e-23      Boltzmann constant</li>
+<li>R    8.314462618       Molar gas constant</li>
+<li>F    96485.33212       Faraday constant</li>
+<li>t    273.15            Celsius temperature</li>
+<li>atm  101325            Standard atmosphere</li>
+<li>e    1.602176634e-19   Elementary charge</li>
+<li>eps0 8.8541878128e-12  Vacuum electric permittivity</li>
+<li>mu0  1.25663706212e-6  Vacuum magnetic permeability</li>
+<li>Z0   376.730313668     Impedance of vacuum</li>
+<li>mU   1.6605390666e-27  Atomic mass constant</li>
+<li>re   2.8179403262e-15  Electron radius</li>
+<li>me   9.1093837015e-31  Electron mass</li>
+<li>mp   1.67262192369e-27 Proton mass</li>
+<li>mn   1.67492749804e-27 Neutron mass</li>
+<li>mmu  1.883531627e-28   Muon mass</li>
+<li>muB  9.2740100783e-24  Bohr magneton</li>
+<li>muN  5.0507837461e-27  Nuclear magneton</li>
+<li>mue  -9.2847647043e-24 Electron magnetic moment</li>
+<li>mup  1.41060679736e-26 Proton magnetic moment</li>
+<li>mun  -9.6623651e-27    Neutron magnetic moment</li>
+<li>mumu -4.4904483e-26    Muon magnetic moment</li>
+<li>alph 7.2973525693e-3   Fine structure constant</li>
+<li>sigm 5.670374419e-8    Stefan-Boltzmann constant</li>
+<li>G0   7.748091729       Conductance quantum</li>
+<li>gamp 2.6752218744e8    Proton gyromagnetic ratio</li>
+<li>C1   3.741771852e-16   First radiation constant</li>
+<li>C2   1.438776877e-2    Second radiation constant</li>
+</ul>
+
+<br><a href="#Top">&rarr;Top</a> <a href="#Home">&rarr;Contents</a><br>
+
+</body>
+</html>
