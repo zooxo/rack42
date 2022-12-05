@@ -1,7 +1,7 @@
 Title of this Document
 
 # Header1 - Intro
-This Text uses the markup language to prepare the text for reading with a html browser.
+This Text uses the markdown language to prepare the text for reading with a html browser.
 The first line provides the document title.
 The first characters in a line decide if the line is interpreted as header or bullet point.
 
